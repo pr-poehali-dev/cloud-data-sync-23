@@ -49,6 +49,18 @@ export default function Contacts() {
           </div>
         </div>
 
+        <div className="mt-px bg-white/10 overflow-hidden">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=39.726474%2C54.629702&z=16&pt=39.726474%2C54.629702~Рязань,+ул.+Маяковского+57&text=Рязань%2C+ул.+Маяковского+57"
+            width="100%"
+            height="360"
+            frameBorder="0"
+            allowFullScreen
+            title="Карта — Зубные Феи"
+            className="block w-full grayscale opacity-80"
+          />
+        </div>
+
         <div className="mt-px bg-white/10">
           <div className="bg-black p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <p className="text-white/40 text-xs">© 2026 Зубные Феи. Все права защищены.</p>
