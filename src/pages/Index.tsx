@@ -5,6 +5,7 @@ import Header from "@/components/Header"
 import Services from "@/components/Services"
 import Contacts from "@/components/Contacts"
 import Reviews from "@/components/Reviews"
+import WhyUs from "@/components/WhyUs"
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
         <PulsingCircle />
       </ShaderBackground>
       <Services />
+      <WhyUs />
       <Reviews />
       <Contacts />
     </>
