@@ -6,6 +6,7 @@ import Services from "@/components/Services"
 import Contacts from "@/components/Contacts"
 import Reviews from "@/components/Reviews"
 import WhyUs from "@/components/WhyUs"
+import Doctors from "@/components/Doctors"
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       </ShaderBackground>
       <Services />
       <WhyUs />
+      <Doctors />
       <Reviews />
       <Contacts />
     </>
