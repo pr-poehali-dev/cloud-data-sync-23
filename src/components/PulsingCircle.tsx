@@ -43,7 +43,7 @@ export default function PulsingCircle() {
           </defs>
           <text className="text-sm fill-white/80">
             <textPath href="#circle" startOffset="0%">
-              Vertex Studio - Vertex Studio - Vertex Studio -
+              Зубные Феи · Рязань · Запись онлайн ·
             </textPath>
           </text>
         </motion.svg>
