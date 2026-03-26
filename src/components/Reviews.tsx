@@ -33,28 +33,28 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section className="bg-black border-t border-white/10 py-24 px-6">
+    <section className="py-24 px-6 bg-[hsl(var(--clr-bg))] border-t border-[hsl(var(--clr-border))]">
       <div className="max-w-5xl mx-auto">
         <div className="mb-14 text-left">
-          <p className="text-white/40 text-xs uppercase tracking-widest mb-3">Отзывы</p>
-          <h2 className="text-4xl md:text-5xl font-light text-white tracking-tight">
-            Нам <span className="italic font-medium">доверяют</span>
+          <p className="text-[hsl(var(--clr-text-muted))] text-xs uppercase tracking-widest mb-3">Отзывы</p>
+          <h2 className="text-4xl md:text-5xl font-light text-[hsl(var(--clr-text))] tracking-tight">
+            Нам <span className="italic font-medium text-[hsl(var(--clr-accent))]">доверяют</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[hsl(var(--clr-border))]">
           {reviews.map((review) => (
             <div
               key={review.name}
-              className="bg-black p-8 flex flex-col gap-4 hover:bg-white/5 transition-colors duration-300"
+              className="bg-[hsl(var(--clr-card))] p-8 flex flex-col gap-4 hover:bg-[hsl(210_40%_95%)] transition-colors duration-300"
             >
               <div className="flex gap-1">
                 {Array.from({ length: review.rating }).map((_, i) => (
-                  <span key={i} className="text-white/70 text-xs">★</span>
+                  <span key={i} className="text-[hsl(var(--clr-accent))] text-xs">★</span>
                 ))}
               </div>
-              <p className="text-white/70 text-xs leading-relaxed flex-1">«{review.text}»</p>
-              <p className="text-white/40 text-xs uppercase tracking-widest">{review.name}</p>
+              <p className="text-[hsl(var(--clr-text-muted))] text-xs leading-relaxed flex-1">«{review.text}»</p>
+              <p className="text-[hsl(var(--clr-text-muted))] text-xs uppercase tracking-widest">{review.name}</p>
             </div>
           ))}
         </div>
