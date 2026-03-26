@@ -17,6 +17,12 @@ const doctors = [
     experience: '',
     initials: 'ИИ',
   },
+  {
+    name: 'Демин Ефим Степанович',
+    specialty: 'Врач стоматолог-хирург, имплантолог',
+    experience: '',
+    initials: 'ЕС',
+  },
 ]
 
 export default function Doctors() {
